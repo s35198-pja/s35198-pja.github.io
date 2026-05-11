@@ -4,8 +4,30 @@
             <meta charset="utf-8">
             <title>Strona główna</title>
 
+            <style>
+               body {
+                margin:0px; }
+
+                .link{
+                    display:inline-block;
+                    border: 5px solid black;
+                    padding: 5px;
+                    margin: 5px;
+                    text-decoration: none;
+                    background-color: blueviolet;
+                    color: aliceblue;
+                    transition-duration: 0.3s;
+                }
+
+                .link:hover{
+                    background-color: blue;
+                    transition-duration: 0.3s;
+                }
+            </style>
+
         </head>
-        <body style="background-color: antiquewhite; background-image: ;">
+
+        <body style="background-color: antiquewhite;">
             <header style="
             /* border: 5x solid red; */
             padding: 10px;
@@ -14,6 +36,10 @@
                 <h1>Strona dla początkujących</h1>
 
             </header>
+            <a class="link" href="podstrona.html">Link do podstrony</a>
+            <br>
+            <button onclick="location.href='podstrona.html'">Button do podstrony</button>
+
             <p><b>Lorem ipsum</b></p>
             
             <div style="
